@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Import Images
 import home1 from '../img/home1.png';
 
 // Styled Components
