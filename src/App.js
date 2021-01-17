@@ -13,7 +13,7 @@ import MovieDetails from './pages/MovieDetails';
 import Nav from './components/Nav';
 
 // Import Router
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 // Import Framer Motion
 import { AnimatePresence } from 'framer-motion';
