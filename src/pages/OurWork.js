@@ -11,9 +11,15 @@ import styled from 'styled-components';
 // Import Router
 import { Link } from 'react-router-dom';
 
+// Import Framer Motion
+import { motion } from 'framer-motion';
+
+// Import Animations
+import { pageAnimation } from '../animations';
+
 const OurWork = () => {
     return (
-        <Work>
+        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{ background: '#fff' }}>
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
@@ -39,15 +45,13 @@ const OurWork = () => {
     );
 }
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
   
   h2 {
     padding: 1rem 0;
-    text-align: center;
-    color: #fff;
   }
 `;
 
