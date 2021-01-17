@@ -15,23 +15,23 @@ const OurWork = () => {
     return (
         <Work>
             <Movie>
-                <h1>The Athlete</h1>
+                <h2>The Athlete</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-athlete">
                     <img src={athlete} alt="athlete"/>
                 </Link>
             </Movie>
             <Movie>
-                <h1>The Racer</h1>
+                <h2>The Racer</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-racer">
                     <img src={theRacer} alt="The Racer"/>
                 </Link>
             </Movie>
             <Movie>
-                <h1>Good Times</h1>
+                <h2>Good Times</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/good-times">
                     <img src={goodTimes} alt="Good Times"/>
                 </Link>
             </Movie>
@@ -46,6 +46,8 @@ const Work = styled.div`
   
   h2 {
     padding: 1rem 0;
+    text-align: center;
+    color: #fff;
   }
 `;
 
