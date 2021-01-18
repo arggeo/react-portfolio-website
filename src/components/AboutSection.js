@@ -33,7 +33,7 @@ const AboutSection = () => {
                         <motion.h2 variants={titleAnimation}>true.</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fadeAnimation}>Contact us for any photography or videography ideas you have. We employ professionas with amazing skills.</motion.p>
+                <motion.p variants={fadeAnimation}>Contact us for any photography or videography ideas you have. We employ professionals with amazing skills.</motion.p>
                 <motion.button variants={fadeAnimation}>Contact Us</motion.button>
             </Description>
             <Image>
