@@ -15,9 +15,16 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 // Import Animations
-import { pageAnimation, photoAnimation, fadeAnimation, lineAnimation, slider, sliderContainer } from '../animations';
+import { pageAnimation, photoAnimation, fadeAnimation, lineAnimation, slider, sliderContainer, scrollReveal } from '../animations';
+
+// useScroll
+import { useScroll } from '../components/useScroll';
 
 const OurWork = () => {
+
+    const [elementM, controlsM] = useScroll();
+    const [elementM2, controlsM2] = useScroll();
+
     return (
         <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{ background: '#fff' }}>
             <motion.div variants={sliderContainer}>
@@ -26,7 +33,7 @@ const OurWork = () => {
                 <Frame3 variants={slider} />
                 <Frame4 variants={slider} />
             </motion.div>
-            <Movie>
+            <Movie variants={scrollReveal} initial="show">
                 <motion.h2 variants={fadeAnimation}>The Athlete</motion.h2>
                 <motion.div variants={lineAnimation} className="line"></motion.div>
                 <Link to="/work/the-athlete">
@@ -35,16 +42,16 @@ const OurWork = () => {
                     </Hide>
                 </Link>
             </Movie>
-            <Movie>
+            <Movie variants={scrollReveal} animate={controlsM} ref={elementM}>
                 <h2>The Racer</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnimation} className="line"></motion.div>
                 <Link to="/work/the-racer">
                     <img src={theRacer} alt="The Racer" />
                 </Link>
             </Movie>
-            <Movie>
+            <Movie variants={scrollReveal} animate={controlsM2} ref={elementM2}>
                 <h2>Good Times</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnimation} className="line"></motion.div>
                 <Link to="/work/good-times">
                     <img src={goodTimes} alt="Good Times" />
                 </Link>
@@ -63,7 +70,7 @@ const Work = styled(motion.div)`
   }
 `;
 
-const Movie = styled.div`
+const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   
   .line {
