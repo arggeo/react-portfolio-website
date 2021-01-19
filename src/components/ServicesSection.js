@@ -11,9 +11,24 @@ import home2 from '../img/home2.png';
 import styled from 'styled-components';
 import { About, Description, Image } from '../styles';
 
+// Intersection Observer
+import { useInView } from 'react-intersection-observer';
+
+// Framer Motion
+import { useAnimation } from 'framer-motion';
+
+// Animations
+import { scrollReveal } from '../animations';
+
+// useScroll
+import { useScroll } from './useScroll';
+
 const ServicesSection = () => {
+
+    const [element, controls] = useScroll();
+
     return (
-        <Services>
+        <Services variants={scrollReveal} animate={controls} ref={element}>
             <Description>
                 <h2>High <span>quality</span> services</h2>
                 <Cards>
