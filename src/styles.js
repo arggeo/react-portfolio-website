@@ -11,6 +11,12 @@ export const About = styled(motion.div)`
   align-items: center;
   padding: 5rem 10rem;
   color: #fff;
+
+  @media (max-width: 1300px) {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+  }
 `;
 
 export const Description = styled.div`
@@ -18,6 +24,14 @@ export const Description = styled.div`
   padding-right: 5rem;
   font-weight: lighter;
   z-index: 2;
+
+  @media (max-width: 1300px) {
+    padding: 0;
+    
+    button {
+      margin: 2rem 0 5rem 0;
+    }
+  }
 `;
 
 export const Image = styled.div`

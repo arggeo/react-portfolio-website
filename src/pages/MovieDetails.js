@@ -94,6 +94,11 @@ const Awards = styled.div`
   align-items: center;
   justify-content: space-around;
   margin: 5rem 10rem;
+
+  @media (max-width: 1300px) {
+    display: block;
+    margin: 2rem;
+  }
 `;
 
 const StyledAward = styled.div`
