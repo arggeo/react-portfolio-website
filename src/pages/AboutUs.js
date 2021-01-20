@@ -5,10 +5,10 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import FaqSection from '../components/FaqSection';
 
-// Import Framer Motion
+// Framer Motion
 import { motion } from 'framer-motion';
 
-// Import Animations
+// Animations
 import { pageAnimation } from '../animations';
 
 const AboutUs = () => {

@@ -3,16 +3,16 @@ import React, { useState, useEffect } from 'react';
 // Styled Components
 import styled from 'styled-components';
 
-// Import Router
+// Router
 import { useHistory } from 'react-router-dom';
 
-// Import Movies
+// Movies
 import { MovieState } from '../movieState';
 
-// Import Framer Motion
+// Framer Motion
 import { motion } from 'framer-motion';
 
-// Import Animations
+// Animations
 import { pageAnimation } from '../animations';
 
 const MovieDetails = () => {

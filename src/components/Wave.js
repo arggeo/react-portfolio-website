@@ -3,7 +3,7 @@ import React from 'react';
 // Styled Components
 import styled from 'styled-components';
 
-// Import Framer Motion
+// Framer Motion
 import { motion } from 'framer-motion';
 
 const Wave = () => {

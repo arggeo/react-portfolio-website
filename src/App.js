@@ -3,20 +3,23 @@ import React from 'react';
 // Styled Components
 import GlobalStyle from './components/GlobalStyle';
 
-// Import Pages
+// Pages
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
 import MovieDetails from './pages/MovieDetails';
 
-// Import Components
+// Components
 import Nav from './components/Nav';
 
-// Import Router
+// Router
 import { Switch, Route, useLocation } from 'react-router-dom';
 
-// Import Framer Motion
+// Framer Motion
 import { AnimatePresence } from 'framer-motion';
+
+// ScrollTop
+import ScrollTop from './components/ScrollTop';
 
 function App() {
 
@@ -25,6 +28,7 @@ function App() {
     return (
         <div className="App">
             <GlobalStyle />
+            <ScrollTop />
             <Nav />
             <AnimatePresence exitBeforeEnter>
                 <Switch location={location} key={location.pathname}>

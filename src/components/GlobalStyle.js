@@ -1,3 +1,4 @@
+// Styled Components
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -10,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     body {
       background: #1b1b1b;
       font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
     }
     
     button {

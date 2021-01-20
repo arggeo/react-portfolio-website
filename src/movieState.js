@@ -1,4 +1,4 @@
-//Import Images
+// Images
 import athlete from './img/athlete-small.png';
 import goodTimes from './img/goodtimes-small.png';
 import theRacer from './img/theracer-small.png';

@@ -1,18 +1,18 @@
 import React from 'react';
 
-// Import Images
+// Images
 import home1 from '../img/home1.png';
 
 // Styled Components
 import { About, Description, Image, Hide } from '../styles';
 
-// Import Framer Motion
+// Framer Motion
 import { motion } from 'framer-motion';
 
-// Import Animations
+// Animations
 import { titleAnimation, fadeAnimation, photoAnimation } from '../animations';
 
-// Import Components
+// Components
 import Wave from './Wave';
 
 const AboutSection = () => {

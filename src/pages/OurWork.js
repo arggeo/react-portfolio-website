@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Import Images
+// Images
 import athlete from '../img/athlete-small.png';
 import theRacer from '../img/theracer-small.png';
 import goodTimes from '../img/goodtimes-small.png';
@@ -8,13 +8,13 @@ import goodTimes from '../img/goodtimes-small.png';
 // Styled Components
 import styled from 'styled-components';
 
-// Import Router
+// Router
 import { Link } from 'react-router-dom';
 
-// Import Framer Motion
+// Framer Motion
 import { motion } from 'framer-motion';
 
-// Import Animations
+// Animations
 import { pageAnimation, photoAnimation, fadeAnimation, lineAnimation, slider, sliderContainer, scrollReveal } from '../animations';
 
 // useScroll

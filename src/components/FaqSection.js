@@ -4,10 +4,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { About } from '../styles';
 
-// Import Components
+// Components
 import Toggle from './Toggle';
 
-// Import Framer Motion
+// Framer Motion
 import { AnimateSharedLayout } from 'framer-motion';
 
 // Animations

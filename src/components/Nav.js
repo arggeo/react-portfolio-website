@@ -3,7 +3,7 @@ import React from 'react';
 // Styled Components
 import styled from 'styled-components';
 
-// Import Router
+// Router
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -26,6 +26,9 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   
   a {
     color: #fff;

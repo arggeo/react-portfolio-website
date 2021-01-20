@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-// Import Styled Components
+// Styled Components
 import styled from 'styled-components';
 
-// Import Framer Motion
+// Framer Motion
 import { motion } from 'framer-motion';
 
 const Toggle = ({ children, title }) => {
